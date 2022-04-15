@@ -1,6 +1,6 @@
 {
     "name": "@lloydjatkinson/astro-example-integration-components",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "",
     "keywords": [],
     "author": "",
@@ -8,10 +8,11 @@
     "type": "module",
     "exports": {
         ".": "./index.ts",
-        "./astro": "./Component.astro"
+        "./astro": "./src/Component.astro"
     },
     "files": [
         "src",
+        "src/",
         "index.ts",
         "Example.astro"
     ],
