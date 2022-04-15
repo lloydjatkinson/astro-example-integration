@@ -7,7 +7,8 @@
     "license": "MIT",
     "type": "module",
     "exports": {
-        ".": "./index.ts"
+        ".": "./index.ts",
+        "./astro": "./Component.astro"
     },
     "files": [
         "src",
@@ -17,7 +18,8 @@
         "preinstall": "npx only-allow pnpm",
         "test": "mocha --parallel --timeout 15000",
         "format": "prettier -w .",
-        "lint": "eslint . --ext .ts,.js"
+        "lint": "eslint . --ext .ts,.js",
+        "vitest": "vitest"
     },
     "devDependencies": {
         "@types/chai": "^4.3.1",
@@ -36,7 +38,8 @@
         "mocha": "^9.2.2",
         "prettier": "^2.6.2",
         "prettier-plugin-astro": "^0.0.12",
-        "typescript": "^4.6.3"
+        "typescript": "^4.6.3",
+        "vitest": "^0.9.3"
     },
     "peerDependencies": {
         "astro": "^1.0.0-beta.12"
