@@ -4,3 +4,4 @@
 // export { HelloWorld } from "./src/main.ts"
 // export type { HelloWorldResult } from "./src/types.ts"
 export { Foo } from './src/types';
+export { default as Component } from './src/Component.astro';
