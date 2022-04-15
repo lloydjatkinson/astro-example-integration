@@ -48,6 +48,14 @@ importers:
       typescript: 4.6.3
       vitest: 0.9.3
 
+  packages/astro-example-integration-playground:
+    specifiers:
+      '@lloydjatkinson/astro-example-integration-components': workspace:^0.0.8
+      astro: ^1.0.0-beta.12
+    devDependencies:
+      '@lloydjatkinson/astro-example-integration-components': link:../astro-example-integration-components
+      astro: 1.0.0-beta.12
+
 packages:
 
   /@ampproject/remapping/2.1.2:
