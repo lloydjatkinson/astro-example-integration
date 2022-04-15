@@ -15,7 +15,6 @@
         "index.ts"
     ],
     "scripts": {
-        "preinstall": "npx only-allow pnpm",
         "test": "mocha --parallel --timeout 15000",
         "format": "prettier -w .",
         "lint": "eslint . --ext .ts,.js",
