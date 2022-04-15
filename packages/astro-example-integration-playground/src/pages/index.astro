@@ -1,6 +1,8 @@
 ---
 // Why is /src actually needed, ideally we'd want to be able to import astro components from /astro, and vue from /vue, etc etc?
 import { Component, Foo } from '@lloydjatkinson/astro-example-integration-components/src';
+// Why does this not work?
+import { Component2 } from '@lloydjatkinson/astro-example-integration-components/astro';
 
 const foos: Foo[] = [
 	{ bar: 'apple', qux: 'banana' },

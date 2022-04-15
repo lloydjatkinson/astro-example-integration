@@ -1,0 +1,21 @@
+---
+import { Foo } from '../types';
+
+export interface Props {
+    readonly foos: readonly Foo[];
+}
+
+const { foos } = Astro.props as Props;
+---
+{
+    foos &&
+    <ul>
+        {
+            foos.map((foo) => (
+                <li>
+                    { foo.bar } - { foo.qux }
+                </li>
+            ))
+        }
+    </ul>
+}
